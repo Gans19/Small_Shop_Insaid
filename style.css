@@ -1,0 +1,342 @@
+/* Reset Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  display: block;
+  width: 100%;
+  position: sticky !important;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.navbar-nav {
+  position: sticky !important;
+  top: 0;
+}
+.navbar {
+  position: sticky !important;
+  top: 0;
+}
+.container-fluid img {
+  width: 40px;
+  height: 40px;
+  top: 6%;
+}
+.navbar-brand p {
+  font-size: 25px;
+  gap: 8px;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: calc(100vh - 6rem);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero h1 {
+  font-size: 4.8rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero .btn {
+  background-color: #051937;
+  color: #fff;
+  padding: 1rem 1rem;
+  font-size: 2.4rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  color: #ffff;
+  background-color: #845ec2;
+}
+
+.features {
+  height: 100vh;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #fff;
+}
+
+.features h1 {
+  color: #fff;
+  padding-top: 40px;
+  font-weight: bolder;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 30px;
+}
+.feature h2 {
+  background-color: cornflowerblue;
+  padding: 3px;
+  border-radius: 2px;
+  border: none;
+}
+
+.feature p {
+  font-size: 18px;
+}
+
+.about-us {
+  height: 100vh;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.about-us h1 {
+  color: #fff;
+  padding-top: 40px;
+  font-weight: bolder;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-us p {
+  font-size: 18px;
+}
+
+.contact {
+  height: 100vh;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8;
+}
+
+.shop-section {
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  overflow: auto;
+}
+
+.shop-section h1 {
+  color: #fff;
+  padding-top: 40px;
+  font-weight: bolder;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cart-count {
+  color: #fff;
+  background-color: orangered;
+  padding: 3px;
+  border-radius: 45px;
+  cursor: pointer;
+}
+.cart-icon {
+  cursor: pointer;
+}
+
+.shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  width: 25rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+  transform: scale(1.05);
+  transition: all ease-in-out 0.5s;
+}
+
+.card img {
+  height: 20rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  padding: 1rem 2rem;
+}
+
+.card-body h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.card button {
+  background-color: #6da9e4;
+  color: #fff;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#contact h1 {
+  color: #fff;
+  padding-top: 40px;
+  font-weight: bolder;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+form label p {
+  font-size: 18px;
+  color: white;
+}
+form button:hover {
+  cursor: pointer;
+  color: white;
+}
+
+/*Footer Section*/
+footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #3586ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social {
+  list-style: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+footer .social li a {
+  font-size: 2em;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  transition: 0.5s;
+  gap: 10px;
+}
+footer .social li a:hover {
+  transform: translateY(-10px);
+}
+footer p {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  display: flex;
+  position: relative;
+}
